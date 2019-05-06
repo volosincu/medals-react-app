@@ -1,0 +1,75 @@
+:root { }
+
+
+body {
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.hide {
+  display: none;
+}
+
+
+.notification {
+  color: whitesmoke;
+  text-align: center;
+}
+
+.notification-animation-on {
+  -moz-animation: notificationAnimation-on 0s ease-in 2s forwards;
+  -webkit-animation: notificationAnimation-on 0s ease-in 2s forwards;
+  -o-animation: notificationAnimation-on 0s ease-in 2s forwards;
+  animation: notificationAnimation-on 0s ease-in 2s forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.notification-animation-off {
+  -moz-animation: notificationAnimation-off 0s ease-in 2s forwards;
+  -webkit-animation: notificationAnimation-off 0s ease-in 2s forwards;
+  -o-animation: notificationAnimation-off 0s ease-in 2s forwards;
+  animation: notificationAnimation-off 0s ease-in 2s forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+.notification-back-online {
+  height: 20px;
+  background-color: darkgreen;
+}
+
+.notification-offline {
+  height: 20px;
+  background-color: darkred;
+}
+
+@keyframes notificationAnimation-on {
+  to {
+    width:0;
+    height:0;
+    overflow:hidden;
+  }
+}
+@-webkit-keyframes notificationAnimation-on {
+  to {
+    width:0;
+    height:0;
+    visibility:hidden;
+  }
+}
+
+@keyframes notificationAnimation-off {
+  to {
+    width:0;
+    height:0;
+    overflow:hidden;
+  }
+}
+@-webkit-keyframes notificationAnimation-off {
+  to {
+    width:0;
+    height:0;
+    visibility:hidden;
+  }
+}

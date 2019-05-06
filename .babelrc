@@ -1,0 +1,4 @@
+{
+    "presets": ["@babel/preset-env", "@babel/preset-react", [ "@babel/env", { "modules": "commonjs" }, "postcss-env-config"]],
+    "plugins": ["@babel/plugin-transform-react-jsx", "syntax-async-functions", "@babel/plugin-transform-regenerator", "add-module-exports"]
+}

@@ -1,0 +1,218 @@
+
+header {
+    height: 50px;
+    max-width: 1200px;
+    display: grid;
+    margin: auto;
+    justify-items: end;
+}
+
+header .header-item {
+    align-self: end;
+    justify-self: end;
+}
+
+header .header-item label {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+:root {
+    --day-background: tomato;
+    --day-reminder-popup-color: #607d8b;
+    --day-reminder-popup-backgd: #ffffff;
+}
+
+.day-component {
+    background: tomato;
+    background: var(--day-background);
+    width: 200px;
+    height: 150px;
+    display: grid;
+    margin: 10px;
+    font-weight: bold;
+    grid-template-rows: 40px 1fr;
+    grid-template-columns: 30px 1fr 40px;
+}
+
+.day-component:hover {
+    box-shadow: 0px 0px 14px 3px #ff9800;
+}
+
+.day-component .day-item {
+    justify-self: center;
+}
+
+.day-component .day-add-item {
+    align-self: center;
+    grid-column-start: 3;
+}
+
+.day-component .day-reminders-item {
+    align-self: center;
+    justify-self: end;
+    grid-column-start: 2;
+}
+
+.day-component .day-number-item {
+    font-size: 3rem;
+    grid-column-start: 2;
+}
+
+.day-component .reminders-counter {
+    height: 30px;
+    width: 30px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.5rem;
+    text-align: center;
+    border-radius: 13px;
+    background-color: #1bd6ea;
+}
+
+.day-component .reminders-counter:hover {
+    box-shadow: 0px 0px 10px 1px  #1bd6ea;
+}
+
+.day-component .no-reminders {
+    display: none;
+}
+
+.day-component .reminders-add {
+    width: 30px;
+    height: 30px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 14px;
+    background-color: wheat;
+}
+
+.day-component .reminders-add:hover {
+    box-shadow: 0px 0px 10px 1px  #ff9800;
+}
+
+.day-component .reminder-popup {
+    top: -30px;
+    z-index: 10;
+    opacity: 0.9;
+    width: 350px;
+    height: 150px;
+    display: none;
+    postion: relative;
+    font-size: 1.4rem;
+    color: #607d8b;
+    color: var(--day-reminder-popup-color);
+    background-color: #ffffff;
+    background-color: var(--day-reminder-popup-backgd);
+}
+
+.day-component .reminder-popup input,
+.day-component .reminder-popup button{
+    font-size: 1.4rem;
+}
+
+.day-component .reminder-popup input[type="text"] {
+    width: 90%;
+    margin : 10px;
+}
+
+.day-component .reminder-popup input[type="date"] {
+    display: block;
+    margin : 10px;
+}
+
+.day-component .reminder-popup button  {
+    float: right;
+    margin : 10px;
+    display: inline-block;
+}
+
+.day-component .show-reminders.reminder-popup-open,
+.day-component .create-reminder.reminder-popup-open {
+    display: block;
+}
+
+.day-component .show-reminders {
+    font-size: 1.3rem;
+    overflow-y: scroll;
+}
+
+.day-component .show-reminders ul {
+    margin: 3px;
+    padding: 8px;
+}
+
+.day-component .show-reminders ul li{
+    border-bottom: 1px solid #eee;
+}
+
+
+:root {
+    --font-color: #28357b;
+    --body-background: #ffffff;
+    --error-color-border: #ff0000;
+}
+
+body {
+    margin: 0;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+.dark,
+.light {
+    color: #28357b;
+    color: var(--font-color);
+    background-color: #ffffff;
+    background-color: var(--body-background);
+}
+
+.error {
+    border: 1px solid #ff0000;
+    border: 1px solid var(--error-color-border);
+}
+
+
+
+.calendar-component {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.calendar-component .calendar-current-month {
+    margin-left: 30px;
+}
+
+.calendar-component .calendar {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+
+.light {
+    --body-background: #f5deb3;
+    --font-color: #4d5375;
+
+    --day-background: #bf5d4b;
+}
+
+
+.dark {
+    --body-background: #4d5375;
+    --font-color: #f5deb3;
+
+    --day-background: #c17413;;
+}
+
