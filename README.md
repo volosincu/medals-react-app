@@ -1,7 +1,7 @@
 # medals-react-app
 
 <p>
-    <p>Live Demo: <a href="https://volosincu.github.io/react-todos">link here</a></p>
+    <p>Live Demo: <a href="https://volosincu.github.io/medals-react-app">link here</a></p>
 </p>
 
 <p>React app that simulates an online live stream of sport events (Olympic medals updates).</p>
